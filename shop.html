@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUXE Bakery - Shop premium artisan breads, cakes, pastries, cookies, and coffee.">
+  <meta name="keywords" content="bakery shop, artisan bread, cakes, pastries, cookies, coffee, luxury bakery">
+  <meta name="author" content="LUXE Bakery">
+  <title>Shop | LUXE Bakery</title>
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Component (loaded dynamically) -->
+  <div id="site-header"></div>
+
+  <!-- Page Header -->
+  <section class="hero-section" style="min-height:auto;padding:120px 0 60px">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h1>Our Shop</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item " style="color:var(--primary)"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active text-dark" aria-current="page">Shop</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="section-padding" style="background:var(--white)">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+          <div class="filter-sidebar" data-aos="fade-right">
+            <h5 class="fw-bold mb-4">Filters</h5>
+            <div class="mb-4">
+              <input type="text" class="form-control" placeholder="Search products...">
+            </div>
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Categories</h6>
+              <div class="filter-form">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-breads">
+                  <label class="form-check-label" for="cat-breads">Breads</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-cakes">
+                  <label class="form-check-label" for="cat-cakes">Cakes</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-pastries">
+                  <label class="form-check-label" for="cat-pastries">Pastries</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-cookies">
+                  <label class="form-check-label" for="cat-cookies">Cookies</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-coffee">
+                  <label class="form-check-label" for="cat-coffee">Coffee</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Price Range</h6>
+              <div class="d-flex gap-2 align-items-center">
+                <input type="number" class="form-control form-control-sm" placeholder="Min" min="0">
+                <span>-</span>
+                <input type="number" class="form-control form-control-sm" placeholder="Max" min="0">
+              </div>
+            </div>
+            <button class="btn-luxe w-100">Apply Filter</button>
+          </div>
+        </div>
+        <!-- Products -->
+        <div class="col-lg-9">
+          <!-- Sort Bar -->
+          <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3" data-aos="fade-up">
+            <p class="text-muted mb-0">Showing 1-16 of 16 results</p>
+            <div class="d-flex align-items-center gap-2">
+              <label class="text-muted mb-0">Sort by:</label>
+              <select class="form-select form-select-sm" style="width:auto">
+                <option>Default</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Rating</option>
+                <option>Newest</option>
+              </select>
+            </div>
+          </div>
+          <!-- Product Grid -->
+          <div class="row g-4">
+            <!-- Product 1: Artisan Sourdough Bread -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              <div class="product-card" data-category="breads">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Artisan-Bread-1.jpg" alt="Artisan Sourdough Bread" loading="lazy">
+                  <span class="product-badge badge bg-success">New</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="1" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="1" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="1" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Breads</p>
+                  <h5 class="product-name"><a href="product-details.html?id=1">Artisan Sourdough Bread</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(124)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹149</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2: Classic Layer Cake -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+              <div class="product-card" data-category="cakes">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Classic-Cak-1.jpg" alt="Classic Layer Cake" loading="lazy">
+                  <span class="product-badge badge bg-danger">Sale</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="2" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="2" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="2" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Cakes</p>
+                  <h5 class="product-name"><a href="product-details.html?id=2">Classic Layer Cake</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>(98)</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="current">₹699</span>
+                    <span class="old">₹899</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3: Butter Croissant -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Butter-Croissant-1.jpg" alt="Butter Croissant" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="3" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="3" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="3" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=3">Butter Croissant</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(210)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹149</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4: Strawberry Glazed Donut -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Glazed-Donut-1.jpg" alt="Strawberry Glazed Donut" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="4" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="4" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="4" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=4">Strawberry Glazed Donut</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(187)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹99</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5: Double Chocolate Cookie -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="product-card" data-category="cookies">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Chocolate-Cookie-2.jpg" alt="Double Chocolate Cookie" loading="lazy">
+                  <span class="product-badge badge bg-dark">Best Seller</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="5" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="5" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="5" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Cookies</p>
+                  <h5 class="product-name"><a href="product-details.html?id=5">Double Chocolate Cookie</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(312)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹129</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6: Berry Danish Pastry -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Danish-Pastry-1.jpg" alt="Berry Danish Pastry" loading="lazy">
+                  <span class="product-badge badge bg-danger">Sale</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="6" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="6" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="6" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=6">Berry Danish Pastry</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(156)</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="current">₹179</span>
+                    <span class="old">₹149</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 7: Caramel Latte -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="product-card" data-category="coffee">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Caramel-Cofe-1.jpg" alt="Caramel Latte" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="7" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="7" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="7" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Coffee</p>
+                  <h5 class="product-name"><a href="product-details.html?id=7">Caramel Latte</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>(243)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹199</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 8: Belgian Chocolate Cake -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+              <div class="product-card" data-category="cakes">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Belgian-Cake-1.jpg" alt="Belgian Chocolate Cake" loading="lazy">
+                  <span class="product-badge badge bg-danger">Sale</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="8" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="8" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="8" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Cakes</p>
+                  <h5 class="product-name"><a href="product-details.html?id=8">Belgian Chocolate Cake</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>(89)</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="current">₹999</span>
+                    <span class="old">₹1,299</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 9: Blueberry Muffin -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Blueberry-Muffin-1.jpg" alt="Blueberry Muffin" loading="lazy">
+                  <span class="product-badge badge bg-success">New</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="9" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="9" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="9" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=9">Blueberry Muffin</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(198)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹179</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 10: French Baguette -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+              <div class="product-card" data-category="breads">
+                <div class="product-img-wrapper">
+                  <img src="images/products/French-Baguette-1.jpg" alt="French Baguette" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="10" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="10" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="10" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Breads</p>
+                  <h5 class="product-name"><a href="product-details.html?id=10">French Baguette</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(167)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹149</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 11: Cinnamon Swirl Roll -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Swirl-Roll-1.jpg" alt="Cinnamon Swirl Roll" loading="lazy">
+                  <span class="product-badge badge bg-dark">Best Seller</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="11" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="11" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="11" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=11">Cinnamon Swirl Roll</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(145)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹129</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 12: Nankhatai -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+              <div class="product-card" data-category="cookies">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Nankhatai-3.jpg" alt="Nankhatai" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="12" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="12" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="12" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=12">Nankhatai</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(201)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹179</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 13: Classic Cupcake -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="product-card" data-category="cakes">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Classic-Cupcake-1.jpg" alt="Classic Cupcake" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="13" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="13" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="13" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Cakes</p>
+                  <h5 class="product-name"><a href="product-details.html?id=13">Classic Cupcake</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(178)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹149</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 14: Avocado Croissant Sandwich -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+              <div class="product-card" data-category="pastries">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Croissant-Sandwich-1.jpg" alt="Avocado Croissant Sandwich" loading="lazy">
+                  <span class="product-badge badge bg-success">New</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="14" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="14" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="14" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Pastries</p>
+                  <h5 class="product-name"><a href="product-details.html?id=14">Avocado Croissant Sandwich</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(134)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹149</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 15: Vada pav -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="product-card" data-category="breads">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Vada-Pav-1.jpg" alt="Vada pav" loading="lazy">
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="15" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="15" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="15" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Breads</p>
+                  <h5 class="product-name"><a href="product-details.html?id=15">Vada pav</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <span>(112)</span>
+                  </div>
+                  <div class="product-price"><span class="current">₹199</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 16: Classic Tiramisu -->
+            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+              <div class="product-card" data-category="cakes">
+                <div class="product-img-wrapper">
+                  <img src="images/products/Classic-Tiramisu-1.jpg" alt="Classic Tiramisu" loading="lazy">
+                  <span class="product-badge badge bg-danger">Sale</span>
+                  <div class="product-actions">
+                    <button class="product-action-btn wishlist-btn" data-product-id="16" aria-label="Add to wishlist"><i
+                        class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                      data-product-id="16" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                    <button class="product-action-btn add-to-cart-btn" data-product-id="16" aria-label="Add to cart"><i
+                        class="bi bi-bag-plus"></i></button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">Cakes</p>
+                  <h5 class="product-name"><a href="product-details.html?id=16">Classic Tiramisu</a></h5>
+                  <div class="product-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>(156)</span>
+                  </div>
+                  <div class="product-price">
+                    <span class="current">₹399</span>
+                    <span class="old">₹499</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <nav class="mt-5" data-aos="fade-up">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component (loaded dynamically) -->
+  <div id="site-footer"></div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Quick View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <img src="images/products/croissant.svg" alt="Product" class="w-100 rounded" id="qv-img">
+            </div>
+            <div class="col-md-6">
+              <p class="text-primary mb-1" style="font-size:0.75rem;text-transform:uppercase;letter-spacing:1px"
+                id="qv-category">Pastries</p>
+              <h4 id="qv-name">Butter Croissant</h4>
+              <div class="product-rating mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(210)</span></div>
+              <h4 class="text-primary mb-3" id="qv-price">?149</h4>
+              <p class="text-muted mb-4">Flaky, buttery layers of perfection. Our signature croissant is made with
+                imported French butter and 72-hour laminated dough.</p>
+              <div class="d-flex gap-3">
+                <button class="btn-luxe add-to-cart-btn" data-product-id="3">Add to Cart <i
+                    class="bi bi-bag-plus"></i></button>
+                <button class="btn-outline-luxe wishlist-btn" data-product-id="3"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

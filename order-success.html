@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order confirmed at LUXE Bakery">
+  <meta name="author" content="LUXE Bakery">
+  <title>Order Confirmed | LUXE Bakery</title>
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- Order Success Section -->
+<section class="error-page d-flex align-items-center justify-content-center" style="min-height:100vh;background:var(--cream);">
+  <div class="container text-center" style="padding-top:80px;">
+    <div data-aos="zoom-in">
+      <div class="success-icon mx-auto mb-4" style="width:100px;height:100px;border-radius:50%;background:#28a745;display:flex;align-items:center;justify-content:center;">
+        <i class="bi bi-check-lg" style="font-size:3rem;color:#fff;"></i>
+      </div>
+    </div>
+    <h2 class="fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Thank You for Your Order!</h2>
+    <p class="text-muted mb-2" data-aos="fade-up" data-aos-delay="200">
+      Order ID: <strong id="orderId">LUXE-</strong>
+    </p>
+    <p class="text-muted mb-2" data-aos="fade-up" data-aos-delay="300">
+      Estimated Delivery: <strong>3-5 Business Days</strong>
+    </p>
+    <p class="text-muted mb-4 mx-auto" style="max-width:500px;" data-aos="fade-up" data-aos-delay="400">
+      Your order has been confirmed and is being prepared with love.
+    </p>
+    <div class="d-flex gap-3 justify-content-center" data-aos="fade-up" data-aos-delay="500">
+      <a href="shop.html" class="btn-luxe"><i class="bi bi-arrow-left me-1"></i> Continue Shopping</a>
+      <a href="profile.html" class="btn-outline-luxe">View Profile <i class="bi bi-person"></i></a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var orderId = params.get('id');
+    if (!orderId) {
+      orderId = 'LUXE-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+    }
+    document.getElementById('orderId').textContent = orderId;
+  })();
+</script>
+</body>
+</html>

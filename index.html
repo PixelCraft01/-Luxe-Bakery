@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="LUXE Bakery - Luxury in Every Bite. Premium artisan breads, cakes, pastries, and coffee crafted with passion and the finest ingredients.">
+  <meta name="keywords"
+    content="bakery, artisan bread, cakes, pastries, cookies, coffee, luxury bakery, premium bakery">
+  <meta name="author" content="LUXE Bakery">
+  <title>LUXE Bakery | Luxury in Every Bite</title>
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Component (loaded dynamically) -->
+  <div id="site-header"></div>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero-bg"><img src="images/hero/hero-bg.png" alt="LUXE Bakery" loading="eager"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-content" data-aos="fade-right">
+          <span class="hero-subtitle">Premium Artisan Bakery</span>
+          <h1 class="hero-title">Luxury in <span>Every Bite</span></h1>
+          <p class="hero-desc">Handcrafted with passion using the finest ingredients. Experience the art of baking where
+            every creation is a masterpiece of flavor and elegance.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="shop.html" class="btn-luxe">Shop Now <i class="bi bi-arrow-right"></i></a>
+            <a href="#menu" class="btn-outline-luxe">Explore Menu</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+          <div class="hero-img-wrapper">
+            <img src="images/products/herooo_bg_3.jpg" alt="Premium Croissant">
+            <div class="hero-floating hero-floating-1" data-aos="zoom-in" data-aos-delay="400">
+              <img src="images/products/Chocolate-Cookie-1.jpg" alt="Cookie">
+              <div>
+                <h6>500+ Reviews</h6>
+                <p>5-Star Rated</p>
+              </div>
+            </div>
+            <div class="hero-floating hero-floating-2" data-aos="zoom-in" data-aos-delay="600">
+              <img src="images/icons/fresh-ingredients.svg" alt="Fresh">
+              <div>
+                <h6>Fresh Daily</h6>
+                <p>Baked Every Morning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#categories" class="text-muted"><i class="bi bi-chevron-double-down fs-4"></i></a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Our Categories</span>
+        <h2>Explore Our Selection</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/breads_2.jpg" alt="Breads">
+            <h6>Breads</h6>
+            <p>24 Items</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/Cakes_4.jpg" alt="Cakes">
+            <h6>Cakes</h6>
+            <p>18 Items</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/pastries_3.jpg" alt="Pastries">
+            <h6>Pastries</h6>
+            <p>32 Items</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/cookies_1.jpg" alt="Cookies">
+            <h6>Cookies</h6>
+            <p>20 Items</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/coffee_1.jpg" alt="Coffee">
+            <h6>Coffee</h6>
+            <p>12 Items</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+          <a href="shop.html" class="category-card d-block">
+            <img src="images/categories/specials_2.jpg" alt="Specials">
+            <h6>Specials</h6>
+            <p>8 Items</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section-padding" style="background:var(--white)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Featured Products</span>
+        <h2>Our Handpicked Favorites</h2>
+        <p>Discover our most loved creations, handpicked for exceptional taste and quality.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card" data-category="pastries">
+            <div class="product-img-wrapper">
+              <img src="images/products/Cream_Pastry_1.jpg" alt="Butter Cream Pastry" loading="lazy">
+              <span class="product-badge badge bg-dark">Best Seller</span>
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="3" aria-label="Add to wishlist"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                  data-product-id="3" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="3" aria-label="Add to cart"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Pastries</p>
+              <h5 class="product-name"><a href="product-details.html?id=3">Butter Cream Pastry</a></h5>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span>(198)</span>
+              </div>
+              <div class="product-price">
+                <span class="current">₹139</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-category="cakes">
+            <div class="product-img-wrapper">
+              <img src="images/products/Layer_Cake_2.jpg" alt="Classic Layer Cake" loading="lazy">
+              <span class="product-badge badge bg-danger">Sale</span>
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="2" aria-label="Add to wishlist"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                  data-product-id="2" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="2" aria-label="Add to cart"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Cakes</p>
+              <h5 class="product-name"><a href="product-details.html?id=2">Classic Layer Cake</a></h5>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>(98)</span>
+              </div>
+              <div class="product-price">
+                <span class="current">₹699</span>
+                <span class="old">₹899</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card" data-category="cookies">
+            <div class="product-img-wrapper">
+              <img src="images/products/Chocolate_Cookie_2.jpg" alt="Double Chocolate Cookie" loading="lazy">
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="5" aria-label="Add to wishlist"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                  data-product-id="5" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="5" aria-label="Add to cart"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Cookies</p>
+              <h5 class="product-name"><a href="product-details.html?id=5">Double Chocolate Cookie</a></h5>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span>(312)</span>
+              </div>
+              <div class="product-price">
+                <span class="current">₹129</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card" data-category="coffee">
+            <div class="product-img-wrapper">
+              <img src="images/products/Caramel_Latte_2.jpg" alt="Caramel Latte" loading="lazy">
+              <span class="product-badge badge bg-success">New</span>
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="7" aria-label="Add to wishlist"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                  data-product-id="7" aria-label="Quick view"><i class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="7" aria-label="Add to cart"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Coffee</p>
+              <h5 class="product-name"><a href="product-details.html?id=7">Caramel Latte</a></h5>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>(243)</span>
+              </div>
+              <div class="product-price">
+                <span class="current">₹199</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="shop.html" class="btn-luxe">View All Products <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-padding about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img src="images/hero/about-bg_1.jpg" alt="About LUXE Bakery">
+            <div class="about-badge">
+              <h3>7+</h3>
+              <p>Years of Excellence</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <span class="subtitle"
+            style="display:inline-block;color:var(--primary);font-size:0.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">About
+            Us</span>
+          <h2 class="mb-4">Crafting Moments of Joy Since 2010</h2>
+          <p class="text-muted mb-4">At LUXE Bakery, we believe that every bite should be a moment of pure bliss. Our
+            master bakers combine time-honored techniques with the finest ingredients to create baked goods that are as
+            beautiful as they are delicious.</p>
+          <p class="text-muted mb-4">From our hand-selected organic flour to our locally sourced dairy and farm-fresh
+            eggs, every ingredient is chosen with care. We never compromise on quality, because you deserve nothing less
+            than perfection.</p>
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="contact-icon"><i class="bi bi-leaf"></i></div>
+                <div>
+                  <h6 class="mb-0">100% Organic</h6><small class="text-muted">Ingredients</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="contact-icon"><i class="bi bi-award"></i></div>
+                <div>
+                  <h6 class="mb-0">Award Winning</h6><small class="text-muted">Recipes</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn-luxe">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding" style="background:var(--cream)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Why Choose Us</span>
+        <h2>The LUXE Difference</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/fresh-ingredients.svg" alt="Fresh Ingredients"></div>
+            <h5>Fresh Ingredients</h5>
+            <p>We source only the finest organic ingredients from trusted local farms and suppliers.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/daily-baking.svg" alt="Daily Baking"></div>
+            <h5>Baked Fresh Daily</h5>
+            <p>Every item is baked fresh each morning, ensuring peak flavor and quality.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/fast-delivery.svg" alt="Fast Delivery"></div>
+            <h5>Fast Delivery</h5>
+            <p>Enjoy same-day delivery so your treats arrive fresh and warm at your door.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/premium-quality.svg" alt="Premium Quality"></div>
+            <h5>Premium Quality</h5>
+            <p>Our master bakers bring decades of expertise to every creation.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/organic.svg" alt="Organic Products"></div>
+            <h5>Organic Products</h5>
+            <p>Committed to natural, preservative-free baked goods for your peace of mind.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="why-card">
+            <div class="why-icon"><img src="images/icons/croissant-icon.svg" alt="Artisan Craft"></div>
+            <h5>Artisan Crafted</h5>
+            <p>Each product is a work of art, lovingly shaped by skilled artisan hands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fresh Everyday Banner -->
+  <section class="section-padding-sm">
+    <div class="container">
+      <div class="banner-section" data-aos="fade-up">
+        <div class="banner-overlay"></div>
+        <img src="images/banners/fresh_banner_3.jpg" alt="Fresh Every Day"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3">
+        <div class="banner-content text-center d-flex flex-column align-items-center">
+          <h2>Fresh From Our Oven Every Day</h2>
+          <p>We bake from scratch using traditional recipes and time-honored methods. Taste the difference that
+            freshness makes.</p>
+          <a href="shop.html" class="btn-white">Order Fresh Now <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers -->
+  <section class="section-padding offer-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 offer-content" data-aos="fade-right">
+          <span class="subtitle" style="color:var(--primary)">Special Offer</span>
+          <h2>Get 30% Off Your First Order</h2>
+          <p class="mb-4">Welcome to LUXE Bakery! Enjoy an exclusive discount on your first purchase. Use code <strong
+              class="text-primary">LUXE30</strong> at checkout.</p>
+          <div class="d-flex gap-3 mb-4 flex-wrap" id="countdown">
+            <div class="countdown-box">
+              <h3 id="cd-days">02</h3>
+              <p>Days</p>
+            </div>
+            <div class="countdown-box">
+              <h3 id="cd-hours">14</h3>
+              <p>Hours</p>
+            </div>
+            <div class="countdown-box">
+              <h3 id="cd-mins">36</h3>
+              <p>Minutes</p>
+            </div>
+            <div class="countdown-box">
+              <h3 id="cd-secs">52</h3>
+              <p>Seconds</p>
+            </div>
+          </div>
+          <a href="shop.html" class="btn-luxe">Claim Offer <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <img src="images/offers/offer-banner.svg" alt="Special Offer" class="rounded-lg"
+            style="width:100%;border-radius:var(--radius-lg)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Menu -->
+  <section class="section-padding" id="menu" style="background:var(--white)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Popular Menu</span>
+        <h2>Our Best Sellers</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="menu-item">
+            <img src="images/menu/cheese-garlic-bread-2.jpg" class="menu-item-img" alt="Sourdough" loading="lazy">
+            <div class="menu-item-content">
+              <h6>Cheese Garlic Bread</h6>
+              <p>Freshly baked with garlic butter, mozzarella cheese & herbs.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹179</span>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-item">
+            <img src="images/menu/paneer-puff-2.jpg" class="menu-item-img" alt="Paneer Puff" loading="lazy">
+            <div class="menu-item-content">
+              <h6>Paneer Puff</h6>
+              <p>Golden flaky pastry with spicy paneer filling.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹99</span>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-item">
+            <img src="images/menu/paneer-tikka-pizza-2.jpg" class="menu-item-img" alt="Paneer Tikka Pizza"
+              loading="lazy">
+            <div class="menu-item-content">
+              <h6>Paneer Tikka Pizza</h6>
+              <p>Loaded with paneer, fresh veggies & mozzarella.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹349</span>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="menu-item">
+            <img src="images/menu/black-forest-cake-1.jpg" class="menu-item-img" alt="Black Forest Cake" loading="lazy">
+            <div class="menu-item-content">
+              <h6>Black Forest Cake</h6>
+              <p>Rich chocolate sponge with fresh whipped cream.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹659</span>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="menu-item">
+            <img src="images/menu/cold-coffee-2.jpg" class="menu-item-img" alt="Cold Coffee" loading="lazy">
+            <div class="menu-item-content">
+              <h6>Cold Coffee</h6>
+              <p>Creamy chilled coffee with chocolate drizzle.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹189</span>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="menu-item">
+            <img src="images/menu/butter-cookies-1.jpg" class="menu-item-img" alt="Butter Cookies" loading="lazy">
+            <div class="menu-item-content">
+              <h6>Butter Cookies</h6>
+              <p>Rich buttery cookies baked to golden perfection.</p>
+            </div>
+            <div class="menu-dots"></div>
+            <span class="menu-item-price">₹249</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Bakers -->
+  <section class="section-padding" style="background:var(--cream)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Our Team</span>
+        <h2>Meet Our Master Bakers</h2>
+        <p>The talented artisans behind every LUXE creation.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="team-card">
+            <div class="team-img-wrapper">
+              <img src="images/chefs/Chef-1.jpg" alt="Aarav Mehta" loading="lazy">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>Aarav Mehta</h5>
+              <p>Head Baker & Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-card">
+            <div class="team-img-wrapper">
+              <img src="images/chefs/Chef-2.jpg" alt="Vihaan Sharma" loading="lazy">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>Vihaan Sharma</h5>
+              <p>Pastry Chef</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-card">
+            <div class="team-img-wrapper">
+              <img src="images/chefs/Chef-3.jpg" alt="Kabir Joshi" loading="lazy">
+              <div class="team-social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>Kabir Joshi</h5>
+              <p>Executive Chef</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding" style="background:var(--white)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Testimonials</span>
+        <h2>What Our Customers Say</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="testimonial-card">
+            <div class="product-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote">The sourdough bread at LUXE Bakery is simply extraordinary. The crust is
+              perfectly crispy and the interior is soft and airy. It's become a weekly tradition for our family.</p>
+            <div class="testimonial-author">
+              <img src="images/testimonials/avatar-1.svg" class="testimonial-avatar" alt="Sarah Mitchell">
+              <div>
+                <h6>Sarah Mitchell</h6>
+                <p>Food Blogger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="product-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-quote">I ordered a custom birthday cake and it exceeded all expectations. Beautiful
+              design, incredible flavor, and the service was impeccable. Truly a luxury experience.</p>
+            <div class="testimonial-author">
+              <img src="images/testimonials/avatar-2.svg" class="testimonial-avatar" alt="David Chen">
+              <div>
+                <h6>David Chen</h6>
+                <p>Regular Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="product-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="testimonial-quote">The pastries are divine and the coffee is always perfect. LUXE Bakery has set
+              the standard for what a premium bakery should be. Highly recommended!</p>
+            <div class="testimonial-author">
+              <img src="images/testimonials/avatar-3.svg" class="testimonial-avatar" alt="Emma Rodriguez">
+              <div>
+                <h6>Emma Rodriguez</h6>
+                <p>Coffee Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="section-padding" style="background:var(--cream)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">Best Sellers</span>
+        <h2>Customer Favorites</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card" data-category="pastries">
+            <div class="product-img-wrapper">
+              <img src="images/products/cinnamon_roll_1.jpg" alt="Cinnamon Swirl Roll" loading="lazy">
+              <span class="product-badge badge bg-dark">Best Seller</span>
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="11"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                    class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="11"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Pastries</p>
+              <h5 class="product-name"><a href="product-details.html">Cinnamon Swirl Roll</a></h5>
+              <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(145)</span></div>
+              <div class="product-price"><span class="current">₹129</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-card" data-category="breads">
+            <div class="product-img-wrapper">
+              <img src="images/products/Freshmilk_Bread_2.jpg" alt="Fresh Milk Bread" loading="lazy">
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="10"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                    class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="10"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Breads</p>
+              <h5 class="product-name"><a href="product-details.html">Fresh Milk Bread</a></h5>
+              <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(167)</span></div>
+              <div class="product-price"><span class="current">₹149</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card" data-category="cakes">
+            <div class="product-img-wrapper">
+              <img src="images/products/Classic_Cupcake_1.jpg" alt="Classic Cupcake" loading="lazy">
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="13"><i
+                    class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                    class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="13"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Cakes</p>
+              <h5 class="product-name"><a href="product-details.html">Classic Cupcake</a></h5>
+              <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(178)</span></div>
+              <div class="product-price"><span class="current">₹149</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-card" data-category="Pizza">
+            <div class="product-img-wrapper">
+              <img src="images/products/Margherita_Pizza_1.jpg" alt="Margherita Pizza" loading="lazy">
+              <div class="product-actions">
+                <button class="product-action-btn wishlist-btn" data-product-id="4"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                    class="bi bi-eye"></i></button>
+                <button class="product-action-btn add-to-cart-btn" data-product-id="4"><i
+                    class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-category">Pizza</p>
+              <h5 class="product-name"><a href="product-details.html">Margherita Pizza</a></h5>
+              <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(187)</span></div>
+              <div class="product-price"><span class="current">₹99</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Gallery -->
+  <section class="section-padding-sm" id="gallery" style="background:var(--white)">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="subtitle">@luxe.bakery</span>
+        <h2>Follow Us on Instagram</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_1.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_3.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_5.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_8.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_10.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+          <a href="#" class="instagram-card d-block">
+            <img src="images/gallery/gallery_12.jpg" alt="Gallery" loading="lazy">
+            <div class="instagram-overlay"><i class="bi bi-instagram"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding faq-section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="subtitle"
+            style="display:block;color:var(--primary);font-size:0.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">FAQ</span>
+          <h2 class="mb-3">Frequently Asked Questions</h2>
+          <p class="text-muted mb-4">Find answers to common questions about our products, ordering, and delivery.</p>
+          <img src="images/products/sourdough_3.jpg" alt="FAQ" class="rounded-lg" style="width:100%;max-width:350px">
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">What ingredients do you use?</button></h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">We use only the finest organic ingredients, including locally sourced flour,
+                  farm-fresh eggs, real butter, and seasonal fruits. We never use artificial preservatives or flavors.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">Do you offer delivery services?</button></h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Yes! We offer same-day delivery for orders placed before 2 PM. Free delivery
+                  is available for orders over ?499. We also offer scheduled delivery for special occasions.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">Can I place custom cake orders?</button></h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Absolutely! We specialize in custom cakes for weddings, birthdays, and
+                  special events. Please contact us at least 48 hours in advance to discuss your vision.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">Are your products gluten-free?</button></h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">We offer a selection of gluten-free options including cookies, brownies, and
+                  select cakes. All gluten-free items are prepared in a separate area to prevent cross-contamination.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">What are your opening hours?</button></h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">We're open Monday to Friday from 7 AM to 8 PM, Saturday from 8 AM to 9 PM,
+                  and Sunday from 8 AM to 6 PM. Our kitchen starts baking at 4 AM every morning!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section-padding newsletter-section">
+    <div class="container">
+      <div class="row align-items-center g-4" data-aos="fade-up">
+        <div class="col-lg-6">
+          <span class="subtitle"
+            style="display:block;color:var(--primary);font-size:0.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">Newsletter</span>
+          <h2>Get 15% Off Your Next Order</h2>
+          <p class="text-muted">Subscribe to our newsletter for exclusive offers, new product alerts, and baking tips
+            delivered to your inbox.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="newsletter-form d-flex gap-2 flex-wrap">
+            <input type="email" class="form-control" placeholder="Enter your email address" required>
+            <button type="submit" class="btn-luxe">Subscribe <i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Quick -->
+  <section class="section-padding-sm" style="background:var(--white)">
+    <div class="container">
+      <div class="row g-4" data-aos="fade-up">
+        <div class="col-md-4">
+          <div class="contact-info-card text-center">
+            <div class="contact-icon mx-auto"><i class="bi bi-geo-alt"></i></div>
+            <h6>Visit Us</h6>
+            <p class="text-muted mb-0">123 Bakery Lane<br>Sweet City, SC 12345</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info-card text-center">
+            <div class="contact-icon mx-auto"><i class="bi bi-telephone"></i></div>
+            <h6>Call Us</h6>
+            <p class="text-muted mb-0">(555) 123-4567<br>Mon - Fri, 7am - 8pm</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info-card text-center">
+            <div class="contact-icon mx-auto"><i class="bi bi-envelope"></i></div>
+            <h6>Email Us</h6>
+            <p class="text-muted mb-0">hello@luxebakery.com<br>orders@luxebakery.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Component (loaded dynamically) -->
+  <div id="site-footer"></div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Quick View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <img src="images/products/croissant.svg" alt="Product" class="w-100 rounded" id="qv-img">
+            </div>
+            <div class="col-md-6">
+              <p class="text-primary mb-1" style="font-size:0.75rem;text-transform:uppercase;letter-spacing:1px"
+                id="qv-category">Pastries</p>
+              <h4 id="qv-name">Butter Croissant</h4>
+              <div class="product-rating mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                  class="bi bi-star-half"></i><span>(210)</span></div>
+              <h4 class="text-primary mb-3" id="qv-price">₹149</h4>
+              <p class="text-muted mb-4">Flaky, buttery layers of perfection. Our signature croissant is made with
+                imported French butter and 72-hour laminated dough.</p>
+              <div class="d-flex gap-3">
+                <button class="btn-luxe add-to-cart-btn" data-product-id="3">Add to Cart <i
+                    class="bi bi-bag-plus"></i></button>
+                <button class="btn-outline-luxe wishlist-btn" data-product-id="3"><i class="bi bi-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container (injected by JS) -->
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Countdown Timer
+    (function () {
+      var end = new Date();
+      end.setDate(end.getDate() + 2);
+      end.setHours(end.getHours() + 14);
+      function update() {
+        var now = new Date();
+        var diff = end - now;
+        if (diff <= 0) return;
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        var daysEl = document.getElementById('cd-days');
+        var hoursEl = document.getElementById('cd-hours');
+        var minsEl = document.getElementById('cd-mins');
+        var secsEl = document.getElementById('cd-secs');
+        if (daysEl) daysEl.textContent = String(d).padStart(2, '0');
+        if (hoursEl) hoursEl.textContent = String(h).padStart(2, '0');
+        if (minsEl) minsEl.textContent = String(m).padStart(2, '0');
+        if (secsEl) secsEl.textContent = String(s).padStart(2, '0');
+      }
+      update();
+      setInterval(update, 1000);
+    })();
+  </script>
+</body>
+
+</html>

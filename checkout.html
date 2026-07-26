@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your order at LUXE Bakery">
+  <meta name="keywords" content="checkout, bakery, order, LUXE Bakery">
+  <meta name="author" content="LUXE Bakery">
+  <title>Checkout | LUXE Bakery</title>
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <!-- Page Header -->
+  <section class="hero-section" style="min-height:auto;padding:160px 0 80px">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h1 class="hero-title">Checkout</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center" style="background:none;padding:0;margin:0">
+            <li class="breadcrumb-item"><a href="index.html" style="color:var(--primary)">Home</a></li>
+            <li class="breadcrumb-item active text-dark" style="color:#fff">Checkout</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Left Column - Billing Details -->
+        <div class="col-lg-8" data-aos="fade-right">
+          <h4 class="fw-bold mb-4">Billing Details</h4>
+          <form id="checkoutForm" class="needs-validation" novalidate>
+
+            <!-- Name Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="billingFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="billingFirstName" required>
+                <div class="invalid-feedback">Please enter your first name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="billingLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="billingLastName" required>
+                <div class="invalid-feedback">Please enter your last name.</div>
+              </div>
+            </div>
+
+            <!-- Email & Phone Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="billingEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="billingEmail" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="billingPhone" class="form-label">Phone <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="billingPhone" required>
+                <div class="invalid-feedback">Please enter your phone number.</div>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+              <label for="billingAddress" class="form-label">Address <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="billingAddress" rows="3" required></textarea>
+              <div class="invalid-feedback">Please enter your address.</div>
+            </div>
+
+            <!-- State & City Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="billingState" class="form-label">State <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="billingState" required>
+                <div class="invalid-feedback">Please enter your state.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="billingCity" class="form-label">City <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="billingCity" required>
+                <div class="invalid-feedback">Please enter your city.</div>
+              </div>
+            </div>
+
+            <!-- Pincode & Country Row -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="billingPincode" class="form-label">Pincode <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="billingPincode" required>
+                <div class="invalid-feedback">Please enter your pincode.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="billingCountry" class="form-label">Country</label>
+                <input type="text" class="form-control" id="billingCountry" value="India" disabled>
+              </div>
+            </div>
+
+            <!-- Payment Method -->
+            <h4 class="fw-bold mt-5 mb-3">Payment Method</h4>
+            <div class="mb-3">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="payUPI" value="upi">
+                <label class="form-check-label" for="payUPI">UPI</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="payCreditCard"
+                  value="credit-card">
+                <label class="form-check-label" for="payCreditCard">Credit Card</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="payDebitCard" value="debit-card">
+                <label class="form-check-label" for="payDebitCard">Debit Card</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="payNetBanking"
+                  value="net-banking">
+                <label class="form-check-label" for="payNetBanking">Net Banking</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="paymentMethod" id="payCOD" value="cod" checked>
+                <label class="form-check-label" for="payCOD">Cash on Delivery</label>
+              </div>
+            </div>
+
+            <!-- Order Notes -->
+            <div class="mb-4">
+              <label for="orderNotes" class="form-label">Order Notes (optional)</label>
+              <textarea class="form-control" id="orderNotes" rows="3"
+                placeholder="Any special instructions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-luxe">Place Order <i class="bi bi-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <!-- Right Column - Order Summary -->
+        <div class="col-lg-4" data-aos="fade-left">
+          <div class="cart-summary" style="position:sticky;top:100px;">
+            <h5 class="mb-4">Order Summary</h5>
+            <div id="checkoutSummary">
+              <!-- Populated by JS -->
+            </div>
+            <hr class="my-3">
+            <div class="coupon-area mb-3">
+              <label class="form-label fw-medium">Coupon Code</label>
+              <div class="d-flex gap-2">
+                <input type="text" class="form-control" placeholder="Enter coupon" id="couponInput">
+                <button class="btn-luxe btn-sm" id="applyCoupon">Apply</button>
+              </div>
+            </div>
+            <hr class="my-3">
+            <div class="d-flex justify-content-between fw-bold fs-5">
+              <span>Grand Total</span>
+              <span id="checkoutGrandTotal">₹0.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

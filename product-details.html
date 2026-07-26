@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUXE Bakery - Luxury in Every Bite. Premium artisan breads, cakes, pastries, and coffee crafted with passion and the finest ingredients.">
+  <meta name="keywords" content="bakery, artisan bread, cakes, pastries, cookies, coffee, luxury bakery, premium bakery">
+  <meta name="author" content="LUXE Bakery">
+  <title>Product Details | LUXE Bakery</title>
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Component (loaded dynamically) -->
+<div id="site-header"></div>
+
+<!-- Page Header -->
+<section class="page-header" data-aos="fade-down">
+  <div class="container">
+    <h1>Product Details</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Product Detail -->
+<section class="section-padding" style="background:var(--white)">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="product-detail-img">
+          <img src="images/products/Butter-Croissant-1.jpg" alt="Butter Croissant" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="product-detail-info">
+          <p class="text-primary mb-2" style="font-size:0.8rem;letter-spacing:2px;text-transform:uppercase">Pastries</p>
+          <h1 class="mb-3">Butter Croissant</h1>
+          <div class="product-rating mb-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <span class="ms-2" style="color:var(--text-muted)">(210 Reviews)</span>
+          </div>
+          <h3 class="text-primary mb-4" style="font-weight:700;font-size:2rem">?149</h3>
+          <p class="text-muted mb-4" style="line-height:1.8">Indulge in the flaky, buttery perfection of our signature Butter Croissant. Made with imported French butter and a 72-hour laminated dough process, each croissant features delicate golden layers that shatter at first bite. Our master bakers wake before dawn to ensure every croissant reaches your hands at peak freshness.</p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Premium French Butter</li>
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary"></i> 72-Hour Laminated Dough</li>
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary"></i> No Preservatives</li>
+            <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Baked Fresh Daily</li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="quantity-input d-flex align-items-center">
+              <button class="btn qty-btn" id="qty-minus"><i class="bi bi-dash"></i></button>
+              <input type="number" class="form-control text-center" value="1" min="1" max="20" id="qty-input" style="width:60px">
+              <button class="btn qty-btn" id="qty-plus"><i class="bi bi-plus"></i></button>
+            </div>
+          </div>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn-luxe add-to-cart-btn" data-product-id="3">Add to Cart <i class="bi bi-bag-plus"></i></button>
+            <button class="btn-outline-luxe wishlist-btn" data-product-id="3"><i class="bi bi-heart"></i> Add to Wishlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Tabs -->
+<section class="section-padding" style="background:var(--cream)">
+  <div class="container">
+    <div data-aos="fade-up">
+      <ul class="nav nav-tabs" id="productTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">Description</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button" role="tab">Additional Info</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reviews (3)</button>
+        </li>
+      </ul>
+      <div class="tab-content pt-4" id="productTabContent">
+        <!-- Description Tab -->
+        <div class="tab-pane fade show active" id="desc" role="tabpanel">
+          <h4 class="mb-3">About This Product</h4>
+          <p class="text-muted mb-3" style="line-height:1.8">Our Butter Croissant is the cornerstone of LUXE Bakery, a testament to our unwavering commitment to quality and tradition. Each croissant begins its journey as a carefully portioned block of premium French butter, sourced directly from a single-origin creamery in Normandy, France.</p>
+          <p class="text-muted mb-3" style="line-height:1.8">Over the course of 72 hours, our master bakers perform a meticulous lamination process, folding the butter into layers of our proprietary dough blend. This time-intensive technique creates the signature honeycomb interior and shatteringly crisp exterior that our croissants are known for.</p>
+          <p class="text-muted mb-3" style="line-height:1.8">Before dawn each morning, our bakers shape and proof the croissants, allowing them to rise slowly in a temperature-controlled environment. The result is a perfectly golden, airy pastry that delivers an unparalleled buttery experience from the first flake to the last crumb.</p>
+          <p class="text-muted" style="line-height:1.8">Whether enjoyed plain, with a dollop of house-made jam, or alongside your morning espresso, our Butter Croissant elevates an ordinary moment into something truly special.</p>
+        </div>
+        <!-- Additional Info Tab -->
+        <div class="tab-pane fade" id="info" role="tabpanel">
+          <h4 class="mb-3">Product Information</h4>
+          <table class="table table-borderless" style="max-width:600px">
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border)">
+                <td class="fw-bold" style="width:180px">Weight</td>
+                <td class="text-muted">120g</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border)">
+                <td class="fw-bold">Ingredients</td>
+                <td class="text-muted">French Butter, Flour, Salt, Sugar, Yeast</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border)">
+                <td class="fw-bold">Allergens</td>
+                <td class="text-muted">Gluten, Dairy</td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Storage</td>
+                <td class="text-muted">Best consumed within 24 hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Reviews Tab -->
+        <div class="tab-pane fade" id="reviews" role="tabpanel">
+          <div class="review-card mb-4 p-4 rounded-lg" style="background:var(--white)">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="images/testimonials/avatar-1.svg" alt="Sarah Mitchell" class="rounded-circle" style="width:50px;height:50px;object-fit:cover">
+              <div>
+                <h6 class="mb-0">Sarah Mitchell</h6>
+                <small class="text-muted">January 15, 2026</small>
+              </div>
+            </div>
+            <div class="product-rating mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-0" style="line-height:1.7">Absolutely divine! The flakiness is unmatched and the butter flavor is rich without being heavy. I've tried croissants all over the city and LUXE Bakery's is by far the best. The 72-hour process really shows in the quality. I order a half dozen every Saturday morning.</p>
+          </div>
+          <div class="review-card mb-4 p-4 rounded-lg" style="background:var(--white)">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="images/testimonials/avatar-2.svg" alt="David Chen" class="rounded-circle" style="width:50px;height:50px;object-fit:cover">
+              <div>
+                <h6 class="mb-0">David Chen</h6>
+                <small class="text-muted">February 3, 2026</small>
+              </div>
+            </div>
+            <div class="product-rating mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="text-muted mb-0" style="line-height:1.7">A morning ritual for our whole family. The layers are impossibly delicate and the aroma alone is worth the trip. We've started pairing them with the LUXE Berry Jam and it's an incredible combination. Highly recommend for any croissant lover.</p>
+          </div>
+          <div class="review-card p-4 rounded-lg" style="background:var(--white)">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="images/testimonials/avatar-3.svg" alt="Emma Rodriguez" class="rounded-circle" style="width:50px;height:50px;object-fit:cover">
+              <div>
+                <h6 class="mb-0">Emma Rodriguez</h6>
+                <small class="text-muted">March 10, 2026</small>
+              </div>
+            </div>
+            <div class="product-rating mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-0" style="line-height:1.7">As a pastry chef myself, I have an extremely high standard for croissants. LUXE Bakery delivers a product that rivals anything I've had in Paris. The lamination is perfect, the butter is top quality, and you can taste the care that goes into every single one. Bravo!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Products -->
+<section class="section-padding" style="background:var(--white)">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <span class="subtitle">You May Also Like</span>
+      <h2>Related Products</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="product-card" data-category="pastries">
+          <div class="product-img-wrapper">
+            <img src="images/products/Glazed-Donut-1.jpg" alt="Strawberry Donut" loading="lazy">
+            <div class="product-actions">
+              <button class="product-action-btn wishlist-btn" data-product-id="4"><i class="bi bi-heart"></i></button>
+              <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"" data-product-id=""><i class="bi bi-eye"></i></button>
+              <button class="product-action-btn add-to-cart-btn" data-product-id="4"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Pastries</p>
+            <h5 class="product-name"><a href="product-details.html?id=4">Strawberry Donut</a></h5>
+            <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(187)</span></div>
+            <div class="product-price"><span class="current">?99</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-card" data-category="cookies">
+          <div class="product-img-wrapper">
+            <img src="images/products/Chocolate-Cookie-1.jpg" alt="Double Chocolate Cookie" loading="lazy">
+            <div class="product-actions">
+              <button class="product-action-btn wishlist-btn" data-product-id="5"><i class="bi bi-heart"></i></button>
+              <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"" data-product-id=""><i class="bi bi-eye"></i></button>
+              <button class="product-action-btn add-to-cart-btn" data-product-id="5"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Cookies</p>
+            <h5 class="product-name"><a href="product-details.html?id=5">Double Chocolate Cookie</a></h5>
+            <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(312)</span></div>
+            <div class="product-price"><span class="current">?129</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="product-card" data-category="pastries">
+          <div class="product-img-wrapper">
+            <img src="images/products/cinnamon_roll_1.jpg" alt="Cinnamon Swirl Roll" loading="lazy">
+            <span class="product-badge badge bg-dark">Best Seller</span>
+            <div class="product-actions">
+              <button class="product-action-btn wishlist-btn" data-product-id="11"><i class="bi bi-heart"></i></button>
+              <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"" data-product-id=""><i class="bi bi-eye"></i></button>
+              <button class="product-action-btn add-to-cart-btn" data-product-id="11"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Pastries</p>
+            <h5 class="product-name"><a href="product-details.html?id=11">Cinnamon Swirl Roll</a></h5>
+            <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(145)</span></div>
+            <div class="product-price"><span class="current">?129</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="product-card" data-category="pastries">
+          <div class="product-img-wrapper">
+            <img src="images/products/macaron.svg" alt="Rose Macaron" loading="lazy">
+            <span class="product-badge badge bg-success">New</span>
+            <div class="product-actions">
+              <button class="product-action-btn wishlist-btn" data-product-id="12"><i class="bi bi-heart"></i></button>
+              <button class="product-action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"" data-product-id=""><i class="bi bi-eye"></i></button>
+              <button class="product-action-btn add-to-cart-btn" data-product-id="12"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Pastries</p>
+            <h5 class="product-name"><a href="product-details.html?id=12">Rose Macaron</a></h5>
+            <div class="product-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><span>(203)</span></div>
+            <div class="product-price"><span class="current">?179</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Component (loaded dynamically) -->
+<div id="site-footer"></div>
+
+<!-- Quick View Modal -->
+<div class="modal fade" id="quickViewModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Quick View</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img src="images/products/Butter-Croissant-1.jpg" alt="Product" class="w-100 rounded" id="qv-img">
+          </div>
+          <div class="col-md-6">
+            <p class="text-primary mb-1" style="font-size:0.75rem;text-transform:uppercase;letter-spacing:1px" id="qv-category">Pastries</p>
+            <h4 id="qv-name">Butter Croissant</h4>
+            <div class="product-rating mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>(210)</span></div>
+            <h4 class="text-primary mb-3" id="qv-price">?149</h4>
+            <p class="text-muted mb-4">Flaky, buttery layers of perfection. Our signature croissant is made with imported French butter and 72-hour laminated dough.</p>
+            <div class="d-flex gap-3">
+              <button class="btn-luxe add-to-cart-btn" data-product-id="3">Add to Cart <i class="bi bi-bag-plus"></i></button>
+              <button class="btn-outline-luxe wishlist-btn" data-product-id="3"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Quantity controls
+  document.addEventListener('DOMContentLoaded', function(){
+    var qtyInput = document.getElementById('qty-input');
+    var qtyMinus = document.getElementById('qty-minus');
+    var qtyPlus = document.getElementById('qty-plus');
+    if(qtyMinus && qtyPlus && qtyInput){
+      qtyMinus.addEventListener('click', function(){
+        var val = parseInt(qtyInput.value) || 1;
+        if(val > 1) qtyInput.value = val - 1;
+      });
+      qtyPlus.addEventListener('click', function(){
+        var val = parseInt(qtyInput.value) || 1;
+        if(val < 20) qtyInput.value = val + 1;
+      });
+    }
+  });
+</script>
+</body>
+</html>

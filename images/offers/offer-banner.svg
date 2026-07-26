@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C241D"/>
+      <stop offset="50%" stop-color="#3A2E24"/>
+      <stop offset="100%" stop-color="#2C241D"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C89B3C" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#C89B3C" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C89B3C" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C89B3C" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#C89B3C" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#C89B3C" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#C89B3C" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C89B3C" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <pattern id="diamondPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M20,0 L40,20 L20,40 L0,20Z" fill="none" stroke="#C89B3C" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1200" height="500" fill="url(#darkBg)"/>
+
+  <!-- Subtle diamond pattern -->
+  <rect width="1200" height="500" fill="url(#diamondPattern)"/>
+
+  <!-- Gold accent glow -->
+  <rect width="1200" height="500" fill="url(#goldShine)"/>
+
+  <!-- Top gold border line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#goldBorder)"/>
+
+  <!-- Bottom gold border line -->
+  <rect x="0" y="498" width="1200" height="2" fill="url(#goldBorder)"/>
+
+  <!-- Decorative corner elements -->
+  <!-- Top-left corner -->
+  <g opacity="0.6">
+    <path d="M40,40 L40,80" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <path d="M40,40 L80,40" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <circle cx="40" cy="40" r="3" fill="#C89B3C"/>
+  </g>
+  <!-- Top-right corner -->
+  <g opacity="0.6">
+    <path d="M1160,40 L1160,80" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <path d="M1160,40 L1120,40" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <circle cx="1160" cy="40" r="3" fill="#C89B3C"/>
+  </g>
+  <!-- Bottom-left corner -->
+  <g opacity="0.6">
+    <path d="M40,460 L40,420" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <path d="M40,460 L80,460" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <circle cx="40" cy="460" r="3" fill="#C89B3C"/>
+  </g>
+  <!-- Bottom-right corner -->
+  <g opacity="0.6">
+    <path d="M1160,460 L1160,420" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <path d="M1160,460 L1120,460" stroke="#C89B3C" stroke-width="1.5" fill="none"/>
+    <circle cx="1160" cy="460" r="3" fill="#C89B3C"/>
+  </g>
+
+  <!-- Decorative wheat left -->
+  <g transform="translate(120, 250)" opacity="0.2" fill="#C89B3C">
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#C89B3C" stroke-width="1.5"/>
+    <ellipse cx="-8" cy="-30" rx="5" ry="10" transform="rotate(-15,-8,-30)"/>
+    <ellipse cx="8" cy="-45" rx="5" ry="10" transform="rotate(15,8,-45)"/>
+    <ellipse cx="-6" cy="-60" rx="4" ry="8" transform="rotate(-12,-6,-60)"/>
+    <ellipse cx="6" cy="-75" rx="4" ry="8" transform="rotate(12,6,-75)"/>
+    <ellipse cx="0" cy="-15" rx="4" ry="8"/>
+    <ellipse cx="0" cy="-90" rx="3" ry="6"/>
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#C89B3C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Decorative wheat right -->
+  <g transform="translate(1080, 250)" opacity="0.2" fill="#C89B3C">
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#C89B3C" stroke-width="1.5"/>
+    <ellipse cx="-8" cy="-30" rx="5" ry="10" transform="rotate(-15,-8,-30)"/>
+    <ellipse cx="8" cy="-45" rx="5" ry="10" transform="rotate(15,8,-45)"/>
+    <ellipse cx="-6" cy="-60" rx="4" ry="8" transform="rotate(-12,-6,-60)"/>
+    <ellipse cx="6" cy="-75" rx="4" ry="8" transform="rotate(12,6,-75)"/>
+    <ellipse cx="0" cy="-15" rx="4" ry="8"/>
+    <ellipse cx="0" cy="-90" rx="3" ry="6"/>
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#C89B3C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Central decorative divider -->
+  <g filter="url(#goldGlow)">
+    <line x1="350" y1="140" x2="550" y2="140" stroke="#C89B3C" stroke-width="1" opacity="0.5"/>
+    <line x1="650" y1="140" x2="850" y2="140" stroke="#C89B3C" stroke-width="1" opacity="0.5"/>
+    <!-- Diamond ornament -->
+    <path d="M600,130 L610,140 L600,150 L590,140Z" fill="#C89B3C" opacity="0.6"/>
+    <path d="M600,133 L607,140 L600,147 L593,140Z" fill="none" stroke="#2C241D" stroke-width="0.5"/>
+  </g>
+
+  <!-- "SPECIAL OFFER" text -->
+  <text x="600" y="195" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="8" fill="#C89B3C" opacity="0.7">SPECIAL OFFER</text>
+
+  <!-- Decorative divider below -->
+  <g filter="url(#goldGlow)">
+    <line x1="420" y1="215" x2="580" y2="215" stroke="#C89B3C" stroke-width="0.5" opacity="0.4"/>
+    <line x1="620" y1="215" x2="780" y2="215" stroke="#C89B3C" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="600" cy="215" r="2" fill="#C89B3C" opacity="0.5"/>
+  </g>
+
+  <!-- Main offer text -->
+  <text x="600" y="290" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="bold" fill="#C89B3C" filter="url(#softShadow)">25% OFF</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="335" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#FFF8F2" letter-spacing="4" opacity="0.9">ALL ARTISAN BREADS</text>
+
+  <!-- Fine print -->
+  <text x="600" y="375" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#C89B3C" opacity="0.5" letter-spacing="2">LIMITED TIME ONLY</text>
+
+  <!-- Bottom decorative element -->
+  <g filter="url(#goldGlow)">
+    <line x1="480" y1="400" x2="580" y2="400" stroke="#C89B3C" stroke-width="0.5" opacity="0.4"/>
+    <line x1="620" y1="400" x2="720" y2="400" stroke="#C89B3C" stroke-width="0.5" opacity="0.4"/>
+    <path d="M600,393 L607,400 L600,407 L593,400Z" fill="#C89B3C" opacity="0.4"/>
+  </g>
+
+  <!-- Decorative flourishes near bottom -->
+  <g opacity="0.25" stroke="#C89B3C" fill="none" stroke-width="1">
+    <path d="M200,440 Q300,420 400,440 Q500,460 600,440"/>
+    <path d="M600,440 Q700,420 800,440 Q900,460 1000,440"/>
+  </g>
+
+  <!-- Sparkle effects -->
+  <g opacity="0.4" fill="#C89B3C">
+    <path d="M200,100 L203,108 L200,116 L197,108Z">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1000,80 L1002,86 L1000,92 L998,86Z">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M300,400 L302,405 L300,410 L298,405Z">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M900,380 L902,385 L900,390 L898,385Z">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
